@@ -1,0 +1,2 @@
+# GIDIOTr
+a simple blog.
