@@ -13,7 +13,7 @@ npm install（或者cnpm install）
 
 ## ABOUT
 
-* node_module 已经被删除，请大佬们自行安装依赖(直接在signin目录执行npm install即可）
+* node_module 已经被删除，请大佬们自行安装依赖(直接在目录执行npm install即可）
 * 使用大佬们搭的数据库进行测试
 
 ---
