@@ -1,0 +1,45 @@
+html
+	head
+		meta(charset = 'utf-8')
+		title #{username} 's home
+		script(src = 'js/jquery-3.2.1.js')
+		script(src = 'js/mylike.js')
+		link(rel = 'stylesheet' href = '/stylesheet/home.css')
+	body
+		div#head-container
+			span
+				img(src = 'logo.gif' id = 'logo')
+				span#search
+					span#search-info search passages: 
+					input#search-input
+				span.set
+					a(href = '/#{username}?options=passages') passages
+					a(href = '/#{username}?options=photos') photos
+					a#logout logOut
+					a(href = '/#{username}?options=setting') setting
+			h1 GIDIOTr
+			p share your everyday life
+		div#left-container
+			ul
+				li 
+					a(href = '/#{username}') home
+				li 
+					a(href = '/#{username}?options=info') myInfo
+				li 
+					a(href = '/#{username}?options=myliked') my liked
+				li 
+					a(href = '/#{username}?options=commentme') @me
+		div#main-container
+		div#info-container
+			div#self-info
+				div#me
+					img(src = 'head.gif' id = "touxiang")
+				p#user #{username}
+				p 
+					span.i #{follows.length}  
+					span.i#fan #{fans.length}  
+					span.i #{passageNum}
+				p 
+					span#follow follow  
+					span#fans fans  
+					span#blog blog
